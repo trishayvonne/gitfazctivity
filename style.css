@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg4.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+.card {
+    width: 30em;
+    height: 35.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border:10px;
+    border-color: rgb(44, 102, 168);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #04608D, #DA67AD);
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(44, 102, 168, 0.7);
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1 em;
+    margin: 1em;
+  }
+  
+  .card .img {
+    width: 11.8em;
+    height: 12.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+}
+
+.card .img img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Make the image take the full height of the container */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 15px; /* Make the image follow the border-radius of the container */
+}
+  
+  .card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  .share a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .share svg {
+    width: 32px; /* Increase the width */
+    height: 32px; /* Increase the height */
+  }
+  
+  .card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card a:hover {
+    color: #04608D;
+  }
+  
+  .card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .card button:hover {
+    background: #04608D;
+    color: white;
+    cursor: pointer;
+  }
